@@ -8,4 +8,5 @@ class Song < ActiveRecord::Base
   def not_released?
     released == false
   end
+  Pry.start
 end
