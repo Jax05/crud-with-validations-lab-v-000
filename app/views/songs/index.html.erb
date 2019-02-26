@@ -1,0 +1,9 @@
+<h1>Here's a list of songs in our database:</h1>
+<ol>
+  <% @songs.each do |song| %>
+    <li>
+      <%= button_to song.title, song_path %>
+    </li>
+  <% end %>
+</ol>
+<%= button_to 'New Song', new_song_path %>
