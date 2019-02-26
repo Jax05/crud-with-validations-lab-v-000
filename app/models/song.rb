@@ -14,4 +14,5 @@ class Song < ActiveRecord::Base
     else
       errors.add(:release_year, "can't be in the future")
     end
+  end
 end
