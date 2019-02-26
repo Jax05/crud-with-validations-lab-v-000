@@ -8,5 +8,5 @@ class Song < ActiveRecord::Base
   def not_released?
     released == false
   end
-  Pry.start
 end
+# Song.new(title: "Song", released: false, artist_name: "Drake")
