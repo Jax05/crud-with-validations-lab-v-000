@@ -5,8 +5,8 @@ class Song < ActiveRecord::Base
   validates :release_year, numericality: { less_than_or_equal_to: DateTime.now.year }, allow_nil: true, if: :not_released?
   validates :artist_name, presence: true
 
-  def not_released?
-    released == false
-  end
+  def song_released_and_year_is_valid
+    if released.true? && release_year <= Date.today.year
+      errors.add(:expiration_date, "can't be in the past")
+    end
 end
-# Song.new(title: "Song", released: false, artist_name: "Drake")
