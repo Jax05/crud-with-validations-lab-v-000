@@ -9,8 +9,6 @@ class Song < ActiveRecord::Base
   def song_released_and_year_is_valid
     if released = true
       release_year <= Date.today.year
-    elsif released = false
-      release_year == nil
     else
       errors.add(:release_year, "can't be in the future")
     end
