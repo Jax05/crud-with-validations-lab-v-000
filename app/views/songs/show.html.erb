@@ -1,0 +1,18 @@
+<h1><%= @song.title %></h1>
+<div>
+  Artist Name: <%= @song.artist_name %>
+  <% if @song.genre %>
+    Genre: <%= @song.genre %>
+  <% else %>
+    Genre: N/A
+  <% end %>
+  <% if @song.released %>
+    <p>
+      The song was released in <%= @song.release_year %>.
+    </p>
+  <% else %>
+    <p>
+      The song is yet to be released.
+    </p>
+  <% end %>
+</div>
