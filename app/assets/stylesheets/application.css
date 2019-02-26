@@ -19,3 +19,7 @@
   background-color: red;
   display: table;
 }
+
+form div {
+  margin-bottom: 2px;
+}
