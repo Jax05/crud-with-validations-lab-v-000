@@ -16,10 +16,10 @@
     <%= f.text_field :title %>
   </div>
   <div>
-    <%= radio_button_tag(:released, true) %>
-    <%= label_tag(:released_true, "True") %>
-    <%= radio_button_tag(:released, false) %>
-    <%= label_tag(:released_false, "False") %>
+    <%= f.radio_button_tag(:released, true) %>
+    <%= f.label_tag(:released_true, "True") %>
+    <%= f.radio_button_tag(:released, false) %>
+    <%= f.label_tag(:released_false, "False") %>
   </div>
   <div>
     <%= f.label :release_year %><br>
