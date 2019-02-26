@@ -8,7 +8,7 @@ class Song < ActiveRecord::Base
 
   def song_released_and_year_is_valid
     if released == true
-      release_year <= Date.today.year
+      self.release_year <= Date.today.year
     end
   end
 end
